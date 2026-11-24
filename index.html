@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172b4d">
+  <meta name="description" content="Deutsch Meister — learn German from A1 to B2 with vocabulary, grammar and practical healthcare German.">
+  <title>Deutsch Meister | Learn German A1–B2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Deutsch Meister home"><span class="brand-mark">DM</span><span>Deutsch Meister<small>Learn German with confidence</small></span></a>
+    <nav><a href="#learn">Learn</a><a href="#practice">Practice</a><a href="#healthcare">Healthcare</a><a href="#progress">My progress</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">GERMAN • A1 TO B2</div>
+      <h1>Build your German,<br><em>one clear step at a time.</em></h1>
+      <p>Vocabulary, grammar and real-life practice — explained in English, with German examples.</p>
+      <a class="primary-link" href="#learn">Start learning <span>→</span></a>
+      <div class="hero-note">A calm space to learn. No clutter, no pressure.</div>
+    </section>
+
+    <section class="stats" id="progress">
+      <div><strong id="words-count">0</strong><span>Words reviewed</span></div>
+      <div><strong id="quiz-count">0%</strong><span>Quiz accuracy</span></div>
+      <div><strong id="streak-count">0</strong><span>Study sessions</span></div>
+    </section>
+
+    <section class="section" id="learn">
+      <div class="section-heading"><div><div class="eyebrow">YOUR LEARNING PATH</div><h2>Choose your level</h2></div><span class="muted">CEFR A1–B2</span></div>
+      <div class="level-grid">
+        <button class="level active" data-level="A1"><b>A1</b><span>Beginner</span><small>Build the foundations</small></button>
+        <button class="level" data-level="A2"><b>A2</b><span>Elementary</span><small>Grow everyday fluency</small></button>
+        <button class="level" data-level="B1"><b>B1</b><span>Intermediate</span><small>Express yourself clearly</small></button>
+        <button class="level" data-level="B2"><b>B2</b><span>Upper intermediate</span><small>Use German with confidence</small></button>
+      </div>
+      <div class="content-grid">
+        <article class="panel">
+          <div class="panel-top"><div><div class="eyebrow">WORD + GRAMMAR</div><h3 id="vocab-title">A1 vocabulary</h3></div><span class="tag" id="vocab-position">1 / 5</span></div>
+          <div id="vocab-card" class="vocab-card"></div>
+          <div class="button-row"><button class="secondary" id="prev-word">← Previous</button><button class="primary" id="next-word">Next word →</button></div>
+          <button class="quiet full" id="mark-word">✓ Mark as reviewed</button>
+        </article>
+        <article class="panel">
+          <div class="eyebrow">GRAMMAR FOCUS</div><h3 id="grammar-title">Nominativ</h3>
+          <p id="grammar-desc" class="body-copy"></p>
+          <div id="grammar-example" class="example-box"></div>
+          <div class="eyebrow mini-label">CHECK YOUR UNDERSTANDING</div>
+          <p id="grammar-question" class="question"></p>
+          <div id="grammar-options" class="options"></div>
+          <p id="grammar-feedback" class="feedback" aria-live="polite"></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="practice">
+      <div class="section-heading"><div><div class="eyebrow">ACTIVE RECALL</div><h2>Practice zone</h2></div><span class="muted">Learn by doing</span></div>
+      <div class="practice-grid">
+        <article class="panel practice-card"><span class="practice-icon">A</span><h3>Artikel challenge</h3><p>Choose the correct article for a German noun.</p><div class="quiz-word" id="article-word">Tisch</div><div class="button-row three"><button class="secondary article-choice" data-answer="der">der</button><button class="secondary article-choice" data-answer="die">die</button><button class="secondary article-choice" data-answer="das">das</button></div><p class="feedback" id="article-feedback" aria-live="polite"></p><button class="quiet" id="next-article">Another word →</button></article>
+        <article class="panel practice-card"><span class="practice-icon">✎</span><h3>Sentence builder</h3><p>Translate this short sentence into German.</p><div class="quiz-word" id="translation-prompt">I have a book.</div><input id="translation-answer" type="text" placeholder="Type your German sentence…" autocomplete="off"><button class="primary full" id="check-translation">Check answer</button><p class="feedback" id="translation-feedback" aria-live="polite"></p></article>
+        <article class="panel practice-card"><span class="practice-icon">↗</span><h3>Daily mini-test</h3><p>Try a short mixed test using the words and grammar in this starter version.</p><div class="quiz-word"><span id="test-progress">0</span> / 5 questions</div><div id="test-area"><p id="test-question" class="question">Press start when you are ready.</p><div id="test-options" class="options"></div></div><button class="primary full" id="start-test">Start daily test</button><p class="feedback" id="test-feedback" aria-live="polite"></p></article>
+      </div>
+    </section>
+
+    <section class="section healthcare" id="healthcare">
+      <div class="section-heading"><div><div class="eyebrow">GERMAN FOR HEALTHCARE</div><h2>At the hospital</h2></div><span class="tag">Nursing vocabulary</span></div>
+      <p class="body-copy">Practical words and phrases for communicating with patients and colleagues. These are language-learning examples, not clinical instructions.</p>
+      <div class="health-list" id="health-list"></div>
+    </section>
+
+    <section class="section dictionary">
+      <div class="section-heading"><div><div class="eyebrow">QUICK LOOKUP</div><h2>Mini dictionary</h2></div></div>
+      <div class="searchbar"><input id="dictionary-search" type="search" placeholder="Search a German or English word…"><span>⌕</span></div>
+      <div id="dictionary-results" class="dictionary-results"><p class="muted">Search the starter vocabulary.</p></div>
+    </section>
+
+    <section class="section tools">
+      <div class="section-heading"><div><div class="eyebrow">YOUR STUDY TOOLS</div><h2>Make it a habit</h2></div></div>
+      <div class="tools-grid">
+        <div class="tool"><h3>Listen to a word</h3><p>Hear the German pronunciation using your browser's speech feature.</p><button class="secondary" id="speak-word">🔊 Listen to current word</button></div>
+        <div class="tool"><h3>Save your progress</h3><p>Your progress is saved in this browser on this device.</p><div class="button-row"><button class="secondary" id="export-progress">Export progress</button><button class="quiet" id="reset-progress">Reset</button></div></div>
+      </div>
+      <p class="notice">This is the first publishable starter version. Progress is stored locally in your browser. It does not yet have user accounts, cloud sync, AI sentence correction, or the complete A1–B2 course.</p>
+    </section>
+  </main>
+  <footer><span>Deutsch Meister</span><span>Learn clearly. Practise consistently.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
